@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOSC</title>
+    <link href="/lib/semantic/semantic.min.css" rel="stylesheet">
+    <script src="/lib/jquery-3.2.1.min.js"></script>
+    <script src="/lib/semantic/semantic.js"></script>
+    <style>
+        .main.container {
+            margin-top: 6em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="ui top fixed huge inverted menu red">
+    <div class="ui container">
+        <a href="/" class="header item">SOSC</a>
+        <a class="item {{menu.leaderboard}}" href="/leaderboard">
+            <i class="sort content descending icon"></i>
+            Leaderboard
+        </a>
+
+        <div class="ui simple dropdown item">
+            <i class="checked calendar icon"></i>
+            Claim
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item {{menu.claims_view}}" href="/claims/view">View</a>
+                <a class="item {{menu.claims_add}}" href="/claims/add">Add</a>
+            </div>
+        </div>
+        <a class="item" href="https://codeiiest.github.io/">
+            <i class="info icon"></i>
+            Information
+        </a>
+        <a class="item" href="https://github.com/codeIIEST/codeIIEST.github.io/wiki/Issues">
+            <i class="github icon"></i>
+            Open Issues
+        </a>
+        
+        
+</div>
+
+</div>
+
+<div class="ui main container">
+    {{{body}}}
+</div>
+
+</body>
+</html>
